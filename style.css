@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.container-login {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  gap: 1.5rem;
+  padding: 3rem;
+  align-items: start;
+}
+
+.container-login-title {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  gap: 0.5rem;
+}
+
+.container-login-title h5,
+.container-login-title p {
+  margin: 0;
+}
+
+.container-login-title h5 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.container-login-title p {
+  font-size: 0.8rem;
+  color: rgb(141, 138, 138);
+}
+
+.container-login-input {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  gap: 0.5rem;
+}
+
+.container-login-input .input-box {
+  padding: 12px 20px;
+  border-radius: 5px;
+  outline: 0;
+  border: 1px solid #ccc;
+}
+
+.container-login-input .input-box:focus {
+  border: 1px solid #0a84ff;
+}
+
+.container-login-option {
+  display: grid;
+  gap: 1rem;
+}
+
+.container-login-option-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(73, 72, 72);
+}
+
+.container-login-option-title::after {
+  flex: 1;
+  content: "";
+  height: 1px;
+  margin-left: 0.4rem;
+  background-color: rgb(140, 137, 137);
+}
+
+.container-login-option-button {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 1rem;
+}
+
+.container-login-option-button div {
+  width: 90px;
+  height: 50px;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.container-login-button {
+  justify-self: center;
+}
+
+.container-login-button button {
+  border: 1px solid transparent;
+  outline: 0;
+  padding: 10px 80px;
+  border-radius: 5px;
+  color: white;
+  background-color: #0a84ff;
+}
+
+.container-login-button button:hover {
+  background-color: white;
+  color: #0a84ff;
+  border: 1px solid #0a84ff;
+  cursor: pointer;
+}
